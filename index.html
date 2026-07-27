@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="A GPA calculator for Khalifa University students."
+    >
+
+    <title>KU GPA Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="app-header">
+            <p class="eyebrow">Student Tool</p>
+            <h1>KU GPA Calculator</h1>
+
+            <p>
+                Add your courses, select your grades and credit hours,
+                then calculate your semester GPA.
+            </p>
+        </header>
+
+        <section class="calculator-card">
+
+            <div class="table-header">
+                <span>Course</span>
+                <span>Grade</span>
+                <span>Credits</span>
+                <span>Action</span>
+            </div>
+
+            <div id="course-list"></div>
+
+            <button id="add-course-button" class="secondary-button">
+                Add Course
+            </button>
+
+            <div class="actions">
+                <button id="calculate-button" class="primary-button">
+                    Calculate GPA
+                </button>
+
+                <button id="reset-button" class="secondary-button">
+                    Reset
+                </button>
+            </div>
+
+            <section class="result-card" aria-live="polite">
+                <p>Your semester GPA</p>
+                <strong id="gpa-result">0.00</strong>
+
+                <p id="result-message">
+                    Add your courses to begin.
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
